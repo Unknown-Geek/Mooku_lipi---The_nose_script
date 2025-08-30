@@ -26,7 +26,8 @@ particle_screen = pygame.Surface((1000, 800), pygame.SRCALPHA)
 
 # Gemini API Configuration
 GEMINI_API_KEY = "AIzaSyDwm1AeQx-a2w5PP8BpW9oIeKRLWlUFmN8"  # Replace with your actual API key
-GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro-vision:generateContent?key={GEMINI_API_KEY}"
+GEMINI_MODEL = "gemini-1.5-flash"  # Updated to current model name
+GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}"
 
 # Malayalam letters pool
 MALAYALAM_LETTERS = [
